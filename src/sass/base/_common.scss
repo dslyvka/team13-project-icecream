@@ -1,4 +1,12 @@
 // ОБЩИЕ СТИЛИ
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
 h1,
 h2,
 h3,
@@ -28,5 +36,6 @@ body {
     color: $secondary-text-coloure;
     // Можно добавить основной фон???
     background-color: #ffffff;
+    letter-spacing: 0,04em;
     margin: 0;
 }
