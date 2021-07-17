@@ -11,7 +11,11 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 54px;
+  @media screen and(min-width: 768px) {
+    flex-direction: row;
+  }
 }
+
 .contacts__card {
   padding: 43px 20px;
   width: 220px;
@@ -19,9 +23,18 @@
   background-color: $primery-text-coloure;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  @media screen and(max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and(min-width: 768px) {
+    padding: 50px 32px;
+    height: 544px;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -36,18 +49,32 @@
   font-size: 12px;
   line-height: 1.86;
   text-align: center;
+  margin-bottom: 25px;
 
   &--accent {
     width: 130px;
     background: #c2e297;
   }
 
-  margin-bottom: 25px;
+  @media screen and(min-width: 768px) {
+    width: 73px;
+    height: 28px;
+    font-size: 16px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    &--accent {
+      width: 138px;
+    }
+  }
 }
 
 .contacts__item {
   margin-bottom: 50px;
+  @media screen and(min-width: 768px) {
+    margin-bottom: 60px;
+  }
 }
+
 .contacts__text {
   font-weight: 500;
   font-size: 12px;
@@ -56,13 +83,28 @@
   &--indent {
     margin-bottom: 10px;
   }
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.86;
+    &--indent {
+      margin-bottom: 14px;
+    }
+  }
 }
+
 .contacts__detail {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
 
   color: #907e82;
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.66;
+    &--link {
+      line-height: 1.83;
+    }
+  }
 }
 .contacts__timetable {
   font-weight: 500;
@@ -70,12 +112,25 @@
   line-height: 1.86;
 
   color: #ffa5ba;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  @media screen and(min-width: 768px) {
+    font-size: 14px;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
 }
 
 .contacts__button-set {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and(min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 .contacts__button {
   display: flex;
@@ -97,10 +152,17 @@
   &--secondary {
     background-color: $primery-text-coloure;
     color: $dark-accent-text-coloure;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-top: 10px;
   }
+  @media screen and(min-width: 768px) {
+    margin-top: 0px;
+    width: 174px;
+    &--secondary {
+      margin-left: 14px;
+    }
+  }
 }
+
 .contacts__icon {
   margin-left: 8px;
   stroke: $primery-text-coloure;
