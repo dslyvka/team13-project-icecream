@@ -1,0 +1,21 @@
+.about {
+  background-color: #fff5f6;
+}
+.about__title {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+
+  color: $light-accent-text-coloure;
+}
+.about__title--details {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $dark-accent-text-coloure;
+}
