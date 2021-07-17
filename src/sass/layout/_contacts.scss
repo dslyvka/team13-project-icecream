@@ -70,6 +70,23 @@
 
 .contacts__item {
   margin-bottom: 50px;
+  position: relative;
+  &::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 179px;
+    height: 0px;
+    bottom: -25px;
+    left: 20;
+    border: 1px solid #e1e1e1;
+    @media screen and(min-width: 768px) {
+      width: 157px;
+      left: 31;
+      bottom: -30;
+    }
+  }
+
   @media screen and(min-width: 768px) {
     margin-bottom: 60px;
   }
