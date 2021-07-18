@@ -1,5 +1,8 @@
 .section--gradient {
-  background-image: linear-gradient(to bottom, $primery-text-coloure 12%, #fff5f6 12%);
+  background-image: linear-gradient(to bottom, $primery-text-coloure 10%, #fff5f6 10%);
+  @media screen and(min-width: 768px) {
+    background-image: linear-gradient(to bottom, $primery-text-coloure 25%, #fff5f6 25%);
+  }
 }
 
 .contacts__title--hidden {
@@ -13,6 +16,10 @@
   margin-bottom: 54px;
   @media screen and(min-width: 768px) {
     flex-direction: row;
+    margin-bottom: 81px;
+  }
+  @media screen and(min-width: 1280px) {
+    margin-bottom: 86px;
   }
 }
 
@@ -34,6 +41,14 @@
 
     &:not(:last-child) {
       margin-right: 20px;
+    }
+  }
+  @media screen and(min-width: 1280px) {
+    padding: 50px 44px 62px 44px;
+    width: 330px;
+    height: 572px;
+    &:not(:last-child) {
+      margin-right: 31px;
     }
   }
 }
@@ -65,6 +80,9 @@
     &--accent {
       width: 138px;
     }
+    @media screen and(min-width: 1280px) {
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -85,9 +103,14 @@
       left: 31;
       bottom: -30;
     }
+    @media screen and(min-width: 1280px) {
+      width: 234px;
+      left: 43;
+      bottom: -32;
+    }
   }
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: 1280px) {
     margin-bottom: 60px;
   }
 }
@@ -107,6 +130,12 @@
       margin-bottom: 14px;
     }
   }
+  @media screen and(min-width: 1280px) {
+    font-size: 16px;
+    &--indent {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .contacts__detail {
@@ -122,7 +151,12 @@
       line-height: 1.83;
     }
   }
+  @media screen and(min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.83;
+  }
 }
+
 .contacts__timetable {
   font-weight: 500;
   font-size: 12px;
@@ -138,6 +172,12 @@
       margin-bottom: 16px;
     }
   }
+  @media screen and(min-width: 1280px) {
+    font-size: 16px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .contacts__button-set {
@@ -149,6 +189,7 @@
     justify-content: center;
   }
 }
+
 .contacts__button {
   display: flex;
   justify-content: center;
@@ -176,6 +217,13 @@
     width: 174px;
     &--secondary {
       margin-left: 14px;
+    }
+  }
+  @media screen and(min-width: 768px) {
+    margin-top: 0px;
+    width: 185px;
+    &--secondary {
+      margin-left: 15px;
     }
   }
 }
