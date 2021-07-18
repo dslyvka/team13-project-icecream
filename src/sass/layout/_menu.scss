@@ -1,9 +1,11 @@
 .menu {
   position: fixed;
+  z-index: 5;
   top: 0;
   right: 0;
 
   width: 100%;
+  max-width: 250px;
   height: 100%;
 
   //   display: flex;
@@ -17,6 +19,8 @@
   //   margin: 0 auto;
 
   transform: translateX(100%);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 150ms;
 
   overflow-y: scroll;
   overflow-x: hidden;
@@ -28,11 +32,18 @@
     transform: translateX(0);
   }
 
+  .menu.is-open .menu-icon {
+    opacity: 0;
+  }
+  .menu.is-open .menu-button {
+    opacity: 0;
+  }
+
   &__button {
     position: absolute;
 
-    top: 23px;
-    right: 28px;
+    top: 5px;
+    right: 20px;
 
     width: 40px;
     height: 40px;
@@ -52,24 +63,29 @@
     fill: #ffffff;
   }
 
-  &-toggle:hover &__close,
-  &-toggle:focus &__close {
-    fill: #d41443;
-  }
+  // &-toggle:hover &__close,
+  // &-toggle:focus &__close {
+  //   fill: #d41443;
+  // }
 }
 
 .modal-button {
+  position: relative;
+
   font-family: DM Sans;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.31;
   text-align: center;
-  
+
   width: 100%;
   max-width: 210px;
+   @media screen and (min-width: 768px) {
+     max-width: 186px;
+   }
   height: 44px;
-  
+
   margin: 0 auto 32px;
 
   border: 0;
@@ -84,8 +100,22 @@
   justify-content: center;
   align-items: center;
 
-  &__arrow {
-    margin-left: 24px;
+  &::after {
+    position: absolute;
+
+    content: '';
+    top: 19px;
+    right: 48px;
+
+     @media screen and (min-width: 768px) {
+       right: 28px;
+     }
+
+    width: 8px;
+    height: 10px;
+
+    background-image: url('../images/row.svg');
+    background-repeat: no-repeat;
   }
 }
 
@@ -97,5 +127,18 @@
 
   &__item:not(:last-child) {
     margin-bottom: 22px;
+  }
+
+  &__link {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #ffffff;
+
+    &.current {
+      color: #d41443;
+    }
   }
 }
