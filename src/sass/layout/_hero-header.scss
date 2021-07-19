@@ -113,19 +113,75 @@
 
 .hero {
   position: relative;
-  padding-top: 193px;
-  padding-bottom: 160px;
+  padding-top: 251px;
+  padding-bottom: 251px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 102px;
-    padding-bottom: 173px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .hero-wrapper {
+    &__text {
+      display: none;
+      @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        bottom: 59px;
+        left: 154px;
+
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 150%;
+        width: 122px;
+        // height: 48px;
+
+        color: #ffffff;
+
+        margin-bottom: 7px;
+      }
+    }
+
+    &__button {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+
+        position: absolute;
+        bottom: 34px;
+        left: 154px;
+
+        border: 0;
+        padding: 0;
+        border-radius: 50%;
+
+        width: 18px;
+        height: 18px;
+
+        background-color: transparent;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      // &-icon {
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
+      // }
+    }
   }
 
   .icecream {
     position: absolute;
     width: 171px;
     z-index: 0;
-    top: 17.5%;
+    top: 18.3%;
     left: 36%;
     overflow: hidden;
 
@@ -133,7 +189,63 @@
       width: 324px;
       height: 368px;
       left: 40%;
-      top: 6.4%;
+      top: 8%;
+    }
+  }
+
+  .cafe {
+    display: none;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      z-index: 1;
+
+      width: 43px;
+      top: 94px;
+      right: 34px;
+
+      display: block;
+    }
+  }
+
+  .food {
+    display: none;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      z-index: 1;
+
+      width: 51px;
+      top: 151px;
+      right: 34px;
+
+      display: block;
+    }
+  }
+
+  .milk {
+    display: none;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      z-index: 1;
+
+      width: 124px;
+      bottom: 28px;
+      left: 34px;
+
+      display: block;
+    }
+  }
+
+  .icegirl {
+    display: none;
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      z-index: 1;
+
+      width: 168px;
+      top: 266px;
+      right: 34px;
+
+      display: block;
     }
   }
 
@@ -150,7 +262,9 @@
   }
 
   &__title {
-    position: relative;
+    position: absolute;
+    top: 193px;
+    left: 20px;
     z-index: 1;
     font-family: Titan One;
     font-style: normal;
@@ -158,6 +272,8 @@
     font-size: 26px;
     line-height: 1.15;
     @media screen and (min-width: 768px) {
+      top: 102px;
+      left: 34px;
       font-size: 22px;
       line-height: 1.14;
     }
@@ -174,8 +290,6 @@
     }
 
     color: $primery-text-coloure;
-
-    margin-bottom: 19px;
   }
   &__title--sub-color {
     font-size: 48px;
@@ -190,10 +304,18 @@
   }
 
   &__buttons {
+    position: absolute;
+    z-index: 1;
+
+    top: 318px;
+    left: 20px;
+    @media screen and (min-width: 768px) {
+      top: 202px;
+      left: 34px;
+    }
+
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 1;
   }
 
   &__item:not(:last-child) {
@@ -238,7 +360,6 @@
 
       top: 38px;
       right: 34px;
-
 
       font-family: DM Sans;
       font-style: normal;
