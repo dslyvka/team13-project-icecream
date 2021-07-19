@@ -1,0 +1,16 @@
+.gallery__title--hidden {
+  display: none;
+}
+.section--background {
+  background-image: linear-gradient(to bottom, #fff5f6 43%, $primery-text-coloure 43%);
+}
+.gallery {
+  width: 100%;
+  max-width: 364px;
+  @media screen and(min-width: 768px) {
+    max-width: 786px;
+  }
+  @media screen and(min-width: 1280px) {
+    max-width: 1280px;
+  }
+}

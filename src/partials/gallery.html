@@ -1,3 +1,13 @@
-<section>
-    <p>gallery section</p>
+<section class="section section--background">
+    <div class="container">
+<h2 class="gallery__title--hidden">Gallery</h2>
+<picture>
+    <source srcset="./images/mobile/gallery/m-gallery-1x.jpg 1x, ./images/mobile/gallery/m-gallery-2x.jpg 2x"
+        media="(max-width: 767px)" />
+    <source srcset="./images/tablet/gallery/t-gallery-1x.jpg 1x, ./images/tablet/gallery/t-gallery-2x.jpg 2x"
+        media="(max-width: 1279px)" />
+    <img class="gallery" srcset="./images/desktop/gallery/d-gallery-1x.jpg 1x, ./images/desktop/gallery/d-gallery-1x.jpg 2x" src="./images/desktop/gallery/d-gallery-1x.jpg"
+        alt="фото">
+</picture>
+    </div>
 </section>
