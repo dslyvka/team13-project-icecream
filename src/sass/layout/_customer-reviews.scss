@@ -1,0 +1,83 @@
+.customer-reviews__photo {
+    width: 85px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 29px;
+}
+.customer-reviews__box {
+    text-align: center;
+    background-color: #FAFAFA;
+    padding-top: 43px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.customer-reviews__text {
+    position: relative;
+    width: 157px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.583;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    background: repeating-linear-gradient(180deg, transparent, transparent 30px, #E1E1E1 31px);
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        width: 460px;
+        background: repeating-linear-gradient(180deg, transparent, transparent 31px, #E1E1E1 33px);
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        width: 750px;
+        background: repeating-linear-gradient(180deg, transparent, transparent 35px, #E1E1E1 37px);
+    }
+}
+.customer-reviews__text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -15px;
+    left: 4px;
+    width: 54px;
+    height: 40px;
+    z-index: -1;
+    background-image: url("../images/quotes.svg");
+    background-repeat: no-repeat;
+    @media screen and (min-width: 768px) {
+        top: -17px;
+        left: -40px;
+    }
+    @media screen and (min-width: 1280px) {
+        top: -15px;
+        left: -37px;
+    }
+}
+.customer-reviews__name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.857;
+}
+.customer-reviews__name::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/three-dots.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 18px;
+}
+.customer-reviews__name::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/home-dots.svg");
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
