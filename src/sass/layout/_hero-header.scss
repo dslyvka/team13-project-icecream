@@ -1,0 +1,281 @@
+@import './menu';
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header {
+  -webkit-animation: fade-in 1s cubic-bezier(0.4, 0, 0.2, 1); /* Safari 4+ */
+  -moz-animation: fade-in 1s cubic-bezier(0.4, 0, 0.2, 1); /* Fx 5+ */
+  -o-animation: fade-in 1s cubic-bezier(0.4, 0, 0.2, 1); /* Opera 12+ */
+  animation: fade-in 1s cubic-bezier(0.4, 0, 0.2, 1); /* IE 10+, Fx 29+ */
+}
+
+.header {
+  background-color: #ffb8ca;
+  position: relative;
+
+  // @media screen and (min-width: 768px) {
+  //   padding-left: 20px;
+  //   padding-right: 20px;
+  // }
+
+  //   background-image: url('../images/mobile/hero/m-icecream-1x.png'),
+  //     url('../images/tablet/hero/t-ellipse-1x.png');
+  //   background-repeat: no-repeat;
+  //   background-position: 117px 92px, 36px 83px;
+  //   background-size: 171px, 346px;
+}
+
+// .logo-n-menu {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+
+//   @media screen and (min-width: 768px) {
+//     display: none;
+//   }
+// }
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  top: 6px;
+  left: 20px;
+  @media screen and (min-width: 768px) {
+    top: 37px;
+    left: 34px;
+  }
+}
+
+.menu {
+  &-button {
+    position: absolute;
+    z-index: 1;
+
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    top: 5px;
+    right: 20px;
+    @media screen and (min-width: 768px) {
+      top: 42px;
+      right: 214px;
+    }
+
+    background-color: transparent;
+    border: 0;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    cursor: pointer;
+  }
+
+  &-icon {
+    width: 40px;
+    height: 40px;
+    fill: #d41443;
+
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.hero {
+  position: relative;
+  padding-top: 193px;
+  padding-bottom: 160px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 102px;
+    padding-bottom: 173px;
+  }
+
+  .icecream {
+    position: absolute;
+    width: 171px;
+    z-index: 0;
+    top: 17.5%;
+    left: 36%;
+    overflow: hidden;
+
+    @media screen and (min-width: 768px) {
+      width: 324px;
+      height: 368px;
+      left: 40%;
+      top: 6.4%;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/tablet/hero/t-ellipse-1x.png');
+    background-repeat: no-repeat;
+    // background-position: 320% 12%;
+    background-position-x: 36px;
+    background-position-y: 83px;
+    background-size: 346px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/tablet/hero/t-ellipse-2x.png');
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    @media screen and (min-width: 768px) {
+      font-size: 22px;
+      line-height: 1.14;
+    }
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    width: 100%;
+    max-width: 218px;
+
+    @media screen and (min-width: 768px) {
+      width: 100%;
+      max-width: 168px;
+      max-height: 80px;
+    }
+
+    color: $primery-text-coloure;
+
+    margin-bottom: 19px;
+  }
+  &__title--sub-color {
+    font-size: 48px;
+    line-height: 1;
+
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+      line-height: 1.14;
+    }
+
+    color: #d41443;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__button,
+  &__button--colored {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+
+    font-size: 8px;
+    line-height: 1.25px;
+
+    text-align: center;
+
+    border: 0;
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    background-color: #d41443;
+    color: #ffffff;
+    padding: 9px 14px;
+
+    height: 24px;
+  }
+
+  &__button--colored {
+    color: #d41443;
+    background-color: #ffffff;
+  }
+
+  .buy {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+
+      position: absolute;
+      z-index: 2;
+
+      top: 38px;
+      right: 34px;
+
+
+      font-family: DM Sans;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 1.31;
+      text-align: center;
+
+      width: 100%;
+      max-width: 160px;
+      height: 44px;
+
+      border: 0;
+      border-radius: 22px;
+
+      color: #d41443;
+      background-color: #ffffff;
+
+      cursor: pointer;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &::after {
+        position: absolute;
+
+        content: '';
+        top: 19px;
+        right: 21px;
+
+        width: 8px;
+        height: 10px;
+
+        background-image: url('../images/row.svg');
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
