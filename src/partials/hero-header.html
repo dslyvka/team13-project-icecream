@@ -1,7 +1,7 @@
 <header class="header">
-    <!-- logo -->
-    <!-- hero -->
-    <section class="section hero container">
+  <!-- logo -->
+  <!-- hero -->
+  <section class="section hero container">
     <a href="./index.html">
       <picture>
         <img
@@ -14,21 +14,40 @@
         />
       </picture>
     </a>
+
+    <nav class="page-nav">
+      <ul class="page-nav__list">
+        <li class="page-nav__item">
+          <a href="#him" class="page-nav__link current">Home</a>
+        </li>
+        <li class="page-nav__item">
+          <a href="#him" class="page-nav__link">About us</a>
+        </li>
+        <li class="page-nav__item">
+          <a href="#him" class="page-nav__link">How it’s made?</a>
+        </li>
+        <li class="page-nav__item">
+          <a href="#him" class="page-nav__link">Our products</a>
+        </li>
+        <li class="page-nav__item">
+          <a href="#contacts" class="page-nav__link js-close-menu-contacts">Contact</a>
+        </li>
+      </ul>
+    </nav>
     <!-- logo -->
 
     <button type="button" class="buy">Buy now</button>
-  <button
-    type="button"
-    class="menu-button js-open-menu"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
-    data-menu-button
-  >
-  
-    <svg class="menu-icon">
-      <use href="./images/close-open.svg#icon-burger"></use>
-    </svg>
-  </button>
+    <button
+      type="button"
+      class="menu-button js-open-menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+      data-menu-button
+    >
+      <svg class="menu-icon">
+        <use href="./images/close-open.svg#icon-burger"></use>
+      </svg>
+    </button>
     <h1 class="hero__title">
       ice cream made with <span class="hero__title--sub-color">passion</span>
     </h1>
@@ -59,6 +78,77 @@
       />
     </picture>
 
+    <picture>
+      <source
+        srcset="./images/desktop/hero/d-cafe-1x.png 1x, ./images/desktop/hero/d-cafe-2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tablet/hero/t-cafe-1x.png 1x, ./images/tablet/hero/t-cafe-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img
+        srcset="./images/tablet/hero/t-cafe-1x.png 1x, ./images/tablet/hero/t-cafe-2x.png 2x"
+        src="./images/tablet/hero/t-cafe-1x.png"
+        alt="Количество кафе"
+        class="cafe"
+      />
+    </picture>
+
+    <picture>
+      <source
+        srcset="./images/desktop/hero/d-food-1x.png 1x, ./images/desktop/hero/d-food-2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tablet/hero/t-food-1x.png 1x, ./images/tablet/hero/t-food-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img
+        srcset="./images/tablet/hero/t-food-1x.png 1x, ./images/tablet/hero/t-food-2x.png 2x"
+        src="./images/tablet/hero/t-food-1x.png"
+        alt="Количество фудтраков"
+        class="food"
+      />
+    </picture>
+
+    <picture>
+      <source
+        srcset="./images/desktop/hero/d-milk-1x.png 1x, ./images/desktop/hero/d-milk-2x.png 2x"
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tablet/hero/t-milk-1x.png 1x, ./images/tablet/hero/t-milk-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img
+        srcset="./images/tablet/hero/t-milk-1x.png 1x, ./images/tablet/hero/t-milk-2x.png 2x"
+        src="./images/tablet/hero/t-milk-1x.png"
+        alt="Натуральное молоко"
+        class="milk"
+      />
+    </picture>
+
+    <picture>
+      <source
+        srcset="
+          ./images/desktop/hero/d-icegirl-1x.png 1x,
+          ./images/desktop/hero/d-icegirl-2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="./images/tablet/hero/t-icegirl-1x.png 1x, ./images/tablet/hero/t-icegirl-2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img
+        srcset="./images/tablet/hero/t-icegirl-1x.png 1x, ./images/tablet/hero/t-icegirl-2x.png 2x"
+        src="./images/tablet/hero/t-icegirl-1x.png"
+        alt="Вкусно"
+        class="icegirl"
+      />
+    </picture>
+
     <ul class="hero__buttons">
       <li class="hero__item">
         <a href="#products" class="hero__button">Products</a>
@@ -67,6 +157,23 @@
         <a href="#him" class="hero__button--colored">How it’s made?</a>
       </li>
     </ul>
+    <!-- <div class="hero-wrapper"> -->
+    <p class="hero-wrapper__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+      labore et
+    </p>
+    <button class="hero-wrapper__button">
+      <picture>
+        <img
+          srcset="./images/product-arrow/arrow-1x.png 1x, ./images/product-arrow/arrowr-2x.png 2x"
+          src="./images/product-arrow/arrow-1x.png"
+          alt="Логотип"
+          class="hero-wrapper__button-icon"
+        />
+      </picture>
+    </button>
+    <!-- </div> -->
   </section>
+
   <!-- hero -->
 </header>
