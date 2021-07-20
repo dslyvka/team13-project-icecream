@@ -1,11 +1,29 @@
 <section class="section about" id="about">
     <div class="container"> 
     <p class="about__title">tradition and love</p>
-    <h2 class="about__title--details">how it’s made?</h2>
+    <h2 class="about__title--details" id="him">how it’s made?</h2>
     <div class="about__table">
-    <img srcset="./images/mobile/about/m-cowmilk-1x.png 1x, ./images/mobile/about/m-cowmilk-2x.png 2x" src="./images/mobile/about/m-cowmilk-1x.png" alt="cow" class="about__img--cow">
-   
-    <div>
+    <picture>
+        <source
+    srcset="./images/desktop/about/d-cowmilk-1x.png 1x, 
+            ./images/desktop/about/d-cowmilk-2x.png 2x"
+    media="(min-width: 1280px)"
+    />
+    <source
+    srcset="./images/tablet/about/t-cowmilk-1x.png 1x, 
+            ./images/tablet/about/t-cowmilk-2x.png 2x"
+    media="(min-width: 768px)"
+    />
+    <img
+    srcset="./images/mobile/about/m-cowmilk-1x.png 1x, 
+            ./images/mobile/about/m-cowmilk-2x.png 2x"
+
+    src="./images/mobile/about/m-cowmilk-1x.png" 
+    alt="cow" 
+    class="about__img--cow"
+    />
+    </picture>
+    <div class="about__descriptoin--total">
     <p class="about__predescription">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros.
         Maecenas eleifend erat at justo fringilla.</p>
     <p class="about__description">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
@@ -13,9 +31,11 @@
     <br/>
     <br/>
          Aliquam erat volutpat. Aenean accumsan. </p>
+         <div class="about__button--details">
     <button type="button" class="about__button">Read more <svg width="8" height="10" class="about__icon">
             <use href="./images/rowRight.svg#icon-Vector-1-2"></use>
         </svg></button>
+        </div>
     </div>
     </div>
     </div>
