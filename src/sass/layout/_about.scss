@@ -13,21 +13,26 @@
     padding-bottom: 65px;
     background-position-y: 330px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    background-image: none;
+  }
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
     padding-bottom: 40px;
     background-position-y: 342px;
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .about {
     background-image: url(../images/mobile/about/m-milkbox-2x.png);
   }
 }
+
+// @media (min-device-pixel-ratio: 2),
+//   (-webkit-min-device-pixel-ratio: 2),
+//   (min-resolution: 192dpi),
+//   (min-resolution: 2dppx) {
+//   .about {
+//     background-image: url(../images/mobile/about/m-milkbox-2x.png);
+//   }
+// }
+
 .about__title {
   font-family: Titan One;
   font-weight: 400;
@@ -64,6 +69,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
+  letter-spacing: 0.04em;
 
   color: $dark-accent-text-coloure;
 
@@ -81,7 +87,12 @@
     margin-bottom: 55px;
   }
 }
-
+.about__descriptoin--total {
+  padding-top: 0px;
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+  }
+}
 .about__predescription {
   font-weight: 500;
   font-size: 12px;
@@ -95,8 +106,9 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 50px;
+    // margin-top: 50px;
     width: 340px;
+    // height: 96px;
     font-size: 14px;
     line-height: 1.78;
     margin-bottom: 35px;
@@ -150,20 +162,30 @@
   color: $dark-accent-text-coloure;
   display: block;
   margin-left: 30px;
+
   stroke: $dark-accent-text-coloure;
 
   &:focus,
   &:hover {
-    background-color: $dark-accent-text-coloure;
-    color: $primery-text-coloure;
-    stroke: $primery-text-coloure;
+    background-color: #ecebeb;
+    // color: $primery-text-coloure;
+    // stroke: $primery-text-coloure;
   }
+
   @media screen and (min-width: 768px) {
     margin-left: 0;
     font-size: 16px;
     line-height: 1.31;
   }
 }
+
+// .about__button--details {
+//   padding-left: 30px;
+
+//   @media screen and (min-width: 768px) {
+//     padding-left: 0;
+//   }
+// }
 
 .about__icon {
   margin-left: 13px;
