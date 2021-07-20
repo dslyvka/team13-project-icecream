@@ -1,8 +1,29 @@
 .section--gradient {
+  position: relative;
   margin-top: 0px;
-  background-image: linear-gradient(to bottom, $primery-text-coloure 10%, #fff5f6 10%);
+  padding-top: 0px;
+  background-image: linear-gradient(to bottom, $primery-text-coloure 5%, #fff5f6 5%);
   @media screen and(min-width: 768px) {
-    background-image: linear-gradient(to bottom, $primery-text-coloure 25%, #fff5f6 25%);
+    background-image: linear-gradient(to bottom, $primery-text-coloure 12%, #fff5f6 12%);
+  }
+  @media screen and(min-width: 1280px) {
+    background-image: url('../images/contactsbg1x.png'),
+      linear-gradient(to bottom, $primery-text-coloure 12%, #fff5f6 12%);
+
+    background-repeat: no-repeat;
+    background-position: 0 102px, left;
+    background-size: 100% 382px, cover;
+  }
+  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1280px) and (min-resolution: 192dpi),
+    screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+    background-image: url('../images/contactsbg2x.png'),
+      linear-gradient(to bottom, $primery-text-coloure 12%, #fff5f6 12%);
+
+    background-repeat: no-repeat;
+    background-position: 0 102px, left;
+    background-size: 100% 382px, cover;
   }
 }
 
@@ -211,11 +232,19 @@
   cursor: pointer;
   border-color: transparent;
   border-radius: 22px;
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
 
   &--secondary {
     background-color: $primery-text-coloure;
     color: $dark-accent-text-coloure;
     margin-top: 10px;
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
   }
   @media screen and(min-width: 768px) {
     margin-top: 0px;
