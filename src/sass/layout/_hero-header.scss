@@ -452,6 +452,11 @@
     cursor: pointer;
 
     background-color: #d41443;
+    &:hover,
+    &:focus {
+      background-color: #c7133e;
+    }
+
     color: #ffffff;
     padding: 9px 14px;
 
@@ -475,6 +480,10 @@
     width: 83px;
     @media screen and (min-width: 1280px) {
       width: 138px;
+    }
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
     }
   }
 
@@ -523,7 +532,7 @@
 
         content: '';
         top: 19px;
-        right: 21px;
+        right: 27px;
 
         width: 8px;
         height: 10px;
