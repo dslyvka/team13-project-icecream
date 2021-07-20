@@ -1,0 +1,116 @@
+.advantages {
+  padding-top: 0px;
+  padding-bottom: 95px;
+  background-color: #fff5f6;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 140px;
+  }
+}
+
+.advantages__icon--milkbucket {
+  height: 50px;
+  width: 33px;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__icon--applebucket {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+.advantages__icon--heart {
+  height: 50px;
+  width: 44px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__item--title {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $dark-accent-text-coloure;
+  margin-bottom: 18px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 13px;
+    font-size: 48px;
+    line-height: 1.14;
+    text-transform: none;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+    font-size: 58px;
+    line-height: 1.13;
+  }
+}
+
+.advantages__item--description {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.66;
+
+  color: $secondary-text-coloure;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+  }
+}
+
+.advantages__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.advantages__list--item:not(:last-child) {
+  margin-bottom: 35px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 30px;
+  }
+}
+
+.advantages__list--item {
+  width: 230px;
+  height: 156px;
+
+  @media screen and (min-width: 768px) {
+    width: 180px;
+    height: 226px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+    height: 222px;
+  }
+}

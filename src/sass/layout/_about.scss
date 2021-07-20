@@ -1,21 +1,22 @@
 .about {
   background-color: #fff5f6;
   padding-top: 125px;
-  padding-bottom: 145px;
+  padding-bottom: 40px;
   background-image: url(../images/mobile/about/m-milkbox-1x.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
+  background-position-x: 50%;
+  background-position-y: 766px;
 
   @media screen and (min-width: 768px) {
     padding-top: 130px;
-    padding-bottom: 246px;
+    padding-bottom: 65px;
+    background-position-y: 330px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 125px;
-    padding-bottom: 310px;
-    background-size: 1280px;
-    background-position: 0px 340px;
+    padding-bottom: 40px;
+    background-position-y: 342px;
   }
 }
 
@@ -37,7 +38,7 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 16px;
+  margin-bottom: 15px;
 
   color: $light-accent-text-coloure;
 
@@ -48,6 +49,7 @@
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
+    letter-spacing: 0.04em;
   }
 }
 .about__title--details {
@@ -61,13 +63,14 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 
   color: $dark-accent-text-coloure;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.14;
+    letter-spacing: 0.04em;
     margin-bottom: 50px;
     width: auto;
   }
@@ -92,20 +95,17 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    margin-left: 0;
-    margin-right: 0;
     margin-top: 50px;
     width: 340px;
     font-size: 14px;
-    line-height: 1.76;
+    line-height: 1.78;
+    margin-bottom: 35px;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: 0;
-    margin-right: 0;
     width: 463px;
     font-size: 16px;
-    line-height: 1.76;
-    margin-bottom: 35px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -120,22 +120,20 @@
   height: 185px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 
   @media screen and (min-width: 768px) {
-    margin-left: 0;
-    margin-right: 0;
     width: 340px;
     font-size: 14px;
-    line-height: 1.76;
-    margin-bottom: 62px;
+    line-height: 1.78;
+    margin-bottom: 60px;
+    letter-spacing: 0.04em;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: 0;
-    margin-right: 0;
     width: 463px;
     font-size: 14px;
-    line-height: 1.94;
+    line-height: 1.92;
+    letter-spacing: 0.04em;
     margin-bottom: 45px;
   }
 }
@@ -150,7 +148,8 @@
   font-size: 14px;
   line-height: 1.28;
   color: $dark-accent-text-coloure;
-  margin-left: 50px;
+  display: block;
+  margin-left: 30px;
   stroke: $dark-accent-text-coloure;
 
   &:focus,
@@ -176,130 +175,26 @@
   }
 }
 
-.about__icon--milkbucket {
-  height: 50px;
-  width: 33px;
-  margin-bottom: 16px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 36px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 40px;
-  }
-}
-
-.about__icon--applebucket {
-  height: 50px;
-  width: 50px;
-  margin-bottom: 16px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 36px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 40px;
-  }
-}
-.about__icon--heart {
-  height: 50px;
-  width: 44px;
-  margin-bottom: 16px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 36px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 40px;
-  }
-}
-
-.about__item--title {
-  font-family: Titan One;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 1.13;
-  color: $dark-accent-text-coloure;
-  margin-bottom: 18px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 22px;
-    font-size: 48px;
-    line-height: 1.14;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 15px;
-    font-size: 58px;
-    line-height: 1.13;
-  }
-}
-
-.about__item--description {
-  font-family: DM Sans;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 1.7;
-
-  color: $secondary-text-coloure;
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 1.74;
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: 16px;
-    line-height: 1.76;
-    letter-spacing: 0.02em;
-  }
-}
-
 .about__img--cow {
   width: 280px;
   height: 279px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 45px;
   @media screen and (min-width: 768px) {
-    margin-left: 39px;
-    margin-right: 17px;
     width: 340px;
     height: 339px;
+    margin: 0px;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: 112px;
-    margin-right: 74px;
     width: 516px;
     height: 516px;
-  }
-}
-
-.about__list {
-  margin-left: 20px;
-  margin-top: 39px;
-  @media screen and (min-width: 768px) {
-    margin-top: 66px;
-    margin-left: 36px;
-    margin-right: 76px;
-    display: flex;
-    justify-content: space-between;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-top: 39px;
-    margin-left: 115px;
-    margin-right: 115px;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.about__list--item:not(:last-child) {
-  margin-bottom: 38px;
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-    margin-right: 60px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 0;
-    margin-right: 30px;
   }
 }
 
 .about__table {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
   }
 }
