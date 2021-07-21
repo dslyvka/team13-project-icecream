@@ -165,6 +165,8 @@
 
   stroke: $dark-accent-text-coloure;
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:focus,
   &:hover {
     background-color: #ecebeb;
