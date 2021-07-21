@@ -48,7 +48,6 @@
 .contacts__card {
   padding: 43px 20px;
   width: 220px;
-  height: 427px;
   background-color: $primery-text-coloure;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -59,7 +58,6 @@
   }
   @media screen and(min-width: 768px) {
     padding: 50px 32px;
-    height: 544px;
 
     &:not(:last-child) {
       margin-right: 20px;
@@ -68,7 +66,6 @@
   @media screen and(min-width: 1280px) {
     padding: 50px 44px 62px 44px;
     width: 330px;
-    height: 572px;
     &:not(:last-child) {
       margin-right: 31px;
     }
@@ -232,6 +229,7 @@
   cursor: pointer;
   border-color: transparent;
   border-radius: 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #c7133e;
@@ -240,7 +238,6 @@
   &--secondary {
     background-color: $primery-text-coloure;
     color: $dark-accent-text-coloure;
-    margin-top: 10px;
     &:hover,
     &:focus {
       background-color: #ecebeb;
@@ -260,6 +257,10 @@
       margin-left: 15px;
     }
   }
+}
+
+.contacts__button-item {
+  margin-top: 10px;
 }
 
 .contacts__icon {
