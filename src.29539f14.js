@@ -5,4 +5,4 @@ const e=document.querySelectorAll('a[href^="#"]');for(let t of e)t.addEventListe
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/scroll");
 },{"./sass/main.scss":"clu1","./js/scroll":"N8YO"}]},{},["Focm"], null)
-//# sourceMappingURL=/team13-project-icecream/src.ade0894a.js.map
+//# sourceMappingURL=/team13-project-icecream/src.29539f14.js.map
